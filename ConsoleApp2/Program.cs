@@ -9,14 +9,14 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            double price = 250.96;
+            double price = 250;
             double TAX = Mathhelper.CalcAmount(price);
 
             double discountedPrice = Mathhelper.CalculateDis(price,10);
 
         }
 
-        private static void Display(LinkedList<string> words, string test)
+        public static void Display(LinkedList<string> words, string test)
         {
             Console.WriteLine(test);
             foreach(string word in words)
